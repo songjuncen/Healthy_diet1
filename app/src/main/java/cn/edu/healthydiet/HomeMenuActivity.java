@@ -1,10 +1,8 @@
 package cn.edu.healthydiet;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import cn.edu.healthydiet.food_grid.FoodGridActivity;
 import cn.edu.healthydiet.food_list.InfoListActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +15,9 @@ public class HomeMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_menu);
     }
+
+
+
 
     public void onClick(View view) {
         Intent intent = new Intent();
@@ -33,5 +34,10 @@ public class HomeMenuActivity extends AppCompatActivity {
         }
         startActivity(intent);
     }
-    }
+
+
+
+
+
+}
 //在这里设置主界面上三个按钮进行跳转，主界面结构完成,利用intent进行跳转,SWITCH结束之后，start进行跳转
