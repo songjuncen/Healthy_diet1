@@ -79,5 +79,5 @@ public class FoodUtils {
             list.add(bean);
         }
         return list;
-    }
+    }//增加bean里面的内容，就是可以遍历目录的条目
 }

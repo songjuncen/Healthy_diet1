@@ -103,4 +103,4 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
-}
+}//引导页面，第一次模拟APP进入时，可以对APP的内容有所了解。
