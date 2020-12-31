@@ -58,8 +58,8 @@ public class FoodGridAdapter extends BaseAdapter {
 
     //把所有控件都封装到一个类当中
     class  ViewHolder{
-        ImageView iv;
-        TextView tv;
+        ImageView iv;//图像
+        TextView tv;//文字
         public ViewHolder(View view){
             iv=view.findViewById(R.id.item_grid_iv);
             tv=view.findViewById(R.id.item_grid_tv);

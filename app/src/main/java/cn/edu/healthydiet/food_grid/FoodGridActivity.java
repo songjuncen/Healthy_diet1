@@ -1,19 +1,18 @@
 package cn.edu.healthydiet.food_grid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
 import cn.edu.healthydiet.R;
 import cn.edu.healthydiet.bean.FoodBean;
 import cn.edu.healthydiet.bean.FoodUtils;
-import cn.edu.healthydiet.food_list.InfoListActivity;
 
 public class FoodGridActivity extends AppCompatActivity {
     GridView gv;
@@ -35,6 +34,8 @@ public class FoodGridActivity extends AppCompatActivity {
 
 
     }
+
+
 
     private void setListener() {
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {//监听setOnItemClickListener的接口

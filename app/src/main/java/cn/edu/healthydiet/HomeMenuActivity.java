@@ -1,11 +1,13 @@
 package cn.edu.healthydiet;
 
-import androidx.appcompat.app.AppCompatActivity;
-import cn.edu.healthydiet.food_grid.FoodGridActivity;
-import cn.edu.healthydiet.food_list.InfoListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import cn.edu.healthydiet.food_grid.FoodGridActivity;
+import cn.edu.healthydiet.food_list.InfoListActivity;
 
 
 public class HomeMenuActivity extends AppCompatActivity {
@@ -33,7 +35,7 @@ public class HomeMenuActivity extends AppCompatActivity {
                 break;
         }
         startActivity(intent);
-    }
+    }//根据button页面跳转
 
 
 
