@@ -27,8 +27,7 @@ public class InfoListActivity extends AppCompatActivity implements View.OnClickL
     EditText searchEt;
     ImageView searchIv,flushIv;
     ListView showLv;
-    //    ListView内部数据源
-    List<FoodBean>mDatas;
+    List<FoodBean>mDatas; //    ListView内部数据源
     List<FoodBean>allFoodList;//全部的数据源
     private InfoListAdapter adapter;
 

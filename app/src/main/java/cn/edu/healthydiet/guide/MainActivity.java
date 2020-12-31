@@ -30,19 +30,24 @@ public class MainActivity extends AppCompatActivity {
                 if (time ==0) {
                     //  跳转home页面
                     Intent intent = new Intent();
-                    boolean isfirst = preferences.getBoolean("isfirst", true);
+                    boolean isfirst = preferences.getBoolean("isfirst" ,true);
 //                    键值对存储以前是否有进入过APP，如果之前没有存储过，默认就是true
 
                     if (isfirst) {
-                        intent.setClass(MainActivity.this, GuideActivity.class);//isfirst为ture,则是第一次进入APP,就会进去时跳转到指引界面
+                        intent.setClass(MainActivity.this, GuideActivity.class);//Isfirst为ture,则是第一次进入APP,就会进去时跳转到指引界面
                         editor.putBoolean("isfirst",false);  //写入不是第一次进入的纪录
                         editor.commit();    // 提交本次修改纪录
-                    }else {
+                    }
+                    else {
                         intent.setClass(MainActivity.this, HomeMenuActivity.class);//不是第一次进入APP，就进入homemenu页面
                     }
                     startActivity(intent);
                     finish();//最后返回时，不会返回开始的倒计时页面，直接关闭activity
-                }else {
+
+                }
+
+
+                else {
                     tv.setText(time+"");
                     handler.sendEmptyMessageDelayed(1,1000);//一秒钟之后再发信息，time--，前面检测是否为0，不为0就继续--
                 }
@@ -57,6 +62,6 @@ public class MainActivity extends AppCompatActivity {
         tv = findViewById(R.id.main_tv);
         preferences = getSharedPreferences("health_pref",MODE_PRIVATE);
         editor = preferences.edit(); //写入数据的对象
-        handler.sendEmptyMessageDelayed(1,1000);//发送信息编号为1，发送信息在1秒钟之后，
-    }
+        handler.sendEmptyMessageDelayed(1,1000);//发送信息编号为1，发送信息在1秒钟之后，处理信息的数据项
+           }
 }

@@ -2,8 +2,10 @@ package cn.edu.healthydiet.guide;
 
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
 import java.util.List;
 
 public class GuideAdapter extends PagerAdapter {
@@ -43,5 +45,5 @@ public class GuideAdapter extends PagerAdapter {
     View   view = viewList.get(position);
     container.removeView(view);
 
-    }//销毁指定位置的view
+    }//销毁指定位置的view，当界面出屏幕时，就销毁原来的view列表内容
 }
